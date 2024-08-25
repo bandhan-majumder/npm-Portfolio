@@ -1,0 +1,35 @@
+{
+  "name": "bandhanz",
+  "version": "1.0.0",
+  "description": "Terminal Portfolio of Bandhan Majumder",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "bandhanz": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bandhan-majumder/npm-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "terminal",
+    "terminal-portfolio",
+    "bandhanz",
+    "bandhan-majumder"
+  ],
+  "author": "Bandhan Majumder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bandhan-majumder/npm-Portfolio/issues"
+  },
+  "homepage": "https://github.com/bandhan-majumder/npm-Portfolio#readme",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "terminal-image": "^3.0.0"
+  }
+}
