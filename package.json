@@ -1,6 +1,6 @@
 {
   "name": "bandhanz",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Terminal Portfolio of Bandhan Majumder",
   "main": "index.js",
   "type": "module",
@@ -26,8 +26,10 @@
   },
   "homepage": "https://github.com/bandhan-majumder/npm-Portfolio#readme",
   "dependencies": {
+    "bandhanz": "^1.0.7",
     "boxen": "^8.0.1",
     "chalk": "^5.3.0",
+    "got": "^14.4.2",
     "punycode": "^2.3.1",
     "terminal-image": "^3.0.0",
     "tr46": "^5.0.0",

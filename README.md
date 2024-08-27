@@ -1,5 +1,5 @@
 # NPM package for terminal portfolio
-![output image](image.png)
+![output-img](image-1.png)
 ### Details at: <https://www.npmjs.com/package/bandhanz?activeTab=readme>
 ### This is a simple terminal porfolio type package which contains the information of Bandhan Majumder.
 ### I tried to add profile photo, I was successful locally, but npm does not support those image file types (.jpeg, .png). So I decided to remove that, I case you want to test with your photo locally, go to my github's 'main' branch and try it out...

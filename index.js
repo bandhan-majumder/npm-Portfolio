@@ -1,17 +1,19 @@
 #!/usr/bin/env node
 
-// required modules
-
+// Required modules
 import boxen from 'boxen';
 import chalk from 'chalk';
+import terminalImage from 'terminal-image';
+import got from 'got';
 
-// import terminalImage from 'terminal-image';
+// Async function to fetch the image (from my twitter prof photo @MEbandhan) and display the content
+(async () => {
+    const response = await got('https://pbs.twimg.com/profile_images/1789944853435985920/xoSDo7So_400x400.jpg');
+    const logoImage = await terminalImage.buffer(response.rawBody);
 
-// async operation to fetch the image
-// const logo = await terminalImage.file('myPhoto.jpeg',{width: 50});
-
-// all your data
-const content = `
+    // All my data
+    const content = `
+${logoImage}
 ${chalk.bold('Name:')} Bandhan Majumder
 ${chalk.yellow('About:')} Young and noob..
 ${chalk.whiteBright('GitHub:')} https://github.com/bandhan-majumder
@@ -27,16 +29,17 @@ ${chalk.blue('React')} ${chalk.green('Express')}
 
 ${chalk.bold('Others:')}
 ${chalk.blue('Docker')} ${chalk.black('Git')} ${chalk.yellow('Linux')} ${chalk.whiteBright('AWS')} ${chalk.white('Jenkins')}
-`;
+    `;
 
-// outside box styling
-const box = boxen(content, {
-  padding: 1,
-  margin: 1,
-  borderStyle: "double",
-  borderColor: 'green',
-  float: 'center',
-  width: 80 // Adjust this value to fit your content
-});
+    // Outside box styling
+    const box = boxen(content, {
+        padding: 1,
+        margin: 1,
+        borderStyle: "double",
+        borderColor: 'green',
+        float: 'center',
+        width: 80 // Adjust this value to fit your content
+    });
 
-console.log(box);
+    console.log(box);
+})();
