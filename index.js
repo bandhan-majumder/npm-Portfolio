@@ -4,14 +4,14 @@
 
 import boxen from 'boxen';
 import chalk from 'chalk';
-import terminalImage from 'terminal-image';
+
+// import terminalImage from 'terminal-image';
 
 // async operation to fetch the image
-const logo = await terminalImage.file('myPhoto.jpeg',{width: 50});
+// const logo = await terminalImage.file('myPhoto.jpeg',{width: 50});
 
 // all your data
 const content = `
-${logo}
 ${chalk.bold('Name:')} Bandhan Majumder
 ${chalk.yellow('About:')} Young and noob..
 ${chalk.whiteBright('GitHub:')} https://github.com/bandhan-majumder
